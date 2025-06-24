@@ -1,11 +1,57 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@400..700&display=swap');
+
 body {
     background-color: rgba(231, 176, 26, 0.534);
 }
 header {
     background-color: black;
     padding: 40px;
-    color: white;
+    color: azure;
     text-align: center;
+}
+header a {
+    font-size: larger;
+    text-decoration: none;
+    color: azure;
+}
+header a:hover {
+    text-decoration: underline;
+}
+
+section {
+    font-family: 'Caveat';
+    font-size: 35px;
+    padding: 15px;
+}
+
+section.padrao {
+     background-color: azure;
+}
+section#img1 {
+    background-image: url('imagens/background1.jpg');
+    background-position: center center;
+    color: azure;
+    padding: 15px;
+}
+section#img2 {
+    background-image: url('imagens/background2.jpg');
+    background-position: left center;
+    color: azure;
+    padding: 15px;
+}
+
+footer {
+    background-color: black;
+    color: azure;
+    padding: 1px;
+}
+footer a {
+    text-decoration: none;
+    color: azure;
+}
+footer a:hover {
+    text-decoration: underline;
+    color: rgb(240, 8, 8);
 }
