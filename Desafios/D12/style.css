@@ -2,7 +2,19 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@400..700&display=swap');
 
-body {
+@import url('https://fonts.googleapis.com/css2?family=Amarante&family=Bebas+Neue&family=Caveat:wght@400..700&display=swap');
+
+:root {
+    --fonte01: "Bebas Neue", sans-serif;
+    --fonte02: "Caveat", cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+html, body {
+    min-height: 100vh;
     background-color: rgba(231, 176, 26, 0.534);
     margin: auto;
 }
@@ -12,21 +24,38 @@ header {
     color: azure;
     text-align: center;
 }
-header a {
-    font-size: larger;
-    text-decoration: none;
-    color: azure;
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family: var(--fonte01);
+    font-size: 3em;
 }
-header a:hover {
+header > p {
+    padding-bottom: 50px;
+}
+
+a {
+    color: azure;
+    text-decoration: none;
+    font-weight: bolder;
+}
+a:hover {
     text-decoration: underline;
 }
 
 section {
-    font-family: 'Caveat';
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    font-family: var(--fonte02);
     font-size: 35px;
-    padding: 15px;
+    line-height: 2em;
+    padding-left: 20px;
 }
-
+section.imagem > p {
+    display: inline-block;
+    padding: 4px;
+    background-color: rgba(0, 0, 0, 0.267);
+}
 section.padrao {
      background-color: azure;
 }
@@ -48,13 +77,6 @@ section#img2 {
 footer {
     background-color: black;
     color: azure;
-    padding: 1px;
-}
-footer a {
-    text-decoration: none;
-    color: azure;
-}
-footer a:hover {
-    text-decoration: underline;
-    color: rgb(240, 8, 8);
+    text-align: center;
+    padding: 10px;
 }
