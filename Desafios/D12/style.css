@@ -51,6 +51,16 @@ section {
     line-height: 2em;
     padding-left: 20px;
 }
+section > p {
+    padding-bottom: 2em;
+}
+section.imagem {
+    background-color: rgba(0, 0, 0, 0.575);
+    color: azure;
+    box-shadow: inset 6px 6px 13px 0px black;
+    background-size: cover;
+    background-attachment: fixed;
+}
 section.imagem > p {
     display: inline-block;
     padding: 4px;
@@ -62,14 +72,12 @@ section.padrao {
 section#img1 {
     background-image: url('imagens/background1.jpg');
     background-position: center center;
-    background-attachment: fixed;
     color: azure;
     padding: 15px;
 }
 section#img2 {
     background-image: url('imagens/background2.jpg');
     background-position: left center;
-    background-attachment: fixed;
     color: azure;
     padding: 15px;
 }
