@@ -11,6 +11,7 @@
         table {
             width: 600px;
             border-collapse: collapse;
+            position: relative;
         }
         caption {
             font-size: 1.5em;
@@ -24,6 +25,17 @@
         thead, tfoot {
             background-color: rgb(71, 71, 71);
             color: aliceblue;
+        }
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(71, 71, 71);
+        }
+        tbody > tr:nth-child(even) {
+            background-color: aliceblue;
+        }
+        tbody > tr:nth-child(odd) {
+            background-color:rgba(95, 158, 160, 0.527);
         }
         .num {
             text-align: right;
