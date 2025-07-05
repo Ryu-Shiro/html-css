@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            width: 550px;
+            border-collapse: collapse;
+        }
+        caption {
+            font-size: 1.5em;
+            font-weight: bolder;
+            padding: 10px;
+        }
+        th, td {
+            border: 2px solid black;
+            padding: 10px;
+        }
+        .sex {
+            background-color: aqua;
+        }
+        .prof {
+            background-color: rgba(0, 0, 255, 0.685);
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercicio de Tabela</h1>
+
+    <table>
+        <colgroup>
+            <col class="nome">
+            <col class="sex">
+            <col class="idade">
+            <col class="prof">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Paulo</td>
+            <td>M</td>
+            <td>32</td>
+            <td>Arquiteto</td>
+        </tr>
+        <tr>
+            <td>Matheus</td>
+            <td>M</td>
+            <td>22</td>
+            <td>Estudante</td>
+        </tr>
+        <tr>
+            <td>Luna</td>
+            <td>F</td>
+            <td>27</td>
+            <td>Boxeadora</td>
+        </tr>
+        <tr>
+            <td>Julia</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Fisica</td>
+        </tr>
+        <tr>
+            <td>Pedro</td>
+            <td>M</td>
+            <td>30</td>
+            <td>Pedreiro</td>
+        </tr>
+    </table>
+</body>
+</html>
