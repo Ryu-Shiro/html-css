@@ -7,10 +7,13 @@
 </head>
 <body>
     <h1>MEU PRIMEIRO FORMULARIO</h1>
-    <form>
-        <p>Nome: <input type="text" name="Nome" id="nome"></p>
-        <p>Idade: <input type="text" name="Idade" id="idade"></p>
-        <p>Genero: <input type="text" name="genero" id="genero"></p>
+    <form action="cadastro.js" autocomplete="off">
+        <p><label for="xnome">Nome:</label> 
+            <input type="text" name="Nome" id="xnome"></p>
+        <p><label for="xidade">Idade:</label> 
+            <input type="text" name="Idade" id="xidade"></p>
+        <p><label for="xgenero">Genero:</label> 
+            <input type="text" name="genero" id="xgenero"></p>
         <p><input type="submit" value="Enviar"></p>
     </form>
 </body>
