@@ -13,16 +13,31 @@ html {
 }
 
 header {
-    background-color: rgb(219, 241, 182);
+    background-color: rgb(214, 253, 148);
 }
 header h1 {
     text-align: center;
     padding: 15px;
 }
+
+menu ul {
+    background-color: rgba(181, 248, 119, 0.781);
+    list-style-type: none;
+    text-align: center;
+}
 menu li {
-    background-color: aquamarine;
+    background-color: rgb(212, 247, 88);
     border-radius: 10px;
-    display: flex;
-    padding: 10px;
+    display: inline-block;
+    padding: 8px;
+    margin: 5px;
+}
+
+article {
+    background-color: rgba(255, 228, 196, 0.514);
+
+}
+article h1 {
+    padding: 15px;
     margin: 10px;
 }
