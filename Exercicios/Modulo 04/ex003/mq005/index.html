@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"rel="stylesheet" />
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
-<body>
+<body onresize="tamanho()">
     <header>
         <h1>Meu Site</h1>
-        <menu>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <menu id="menu01">
             <ul>
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
@@ -40,5 +43,22 @@
             </p>
         </article>
     </main>
+    <script>
+        function tamanho() {
+            if (window.innerWidth >= 992) {
+                menu01.style.display = 'block'
+            } else {
+                menu01.style.display = 'none'
+            }
+        }
+        function clickMenu() {
+           if (menu01.style.display == 'block') {
+            menu01.style.display = 'none'
+           } else {
+            menu01.style.display = 'block'
+           }
+
+        }
+    </script>
 </body>
 </html>

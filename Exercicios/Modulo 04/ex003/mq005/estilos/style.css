@@ -2,6 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@400..700&display=swap');
 
+
 :root {
     --fonte001: "Caveat", cursive;
 }
@@ -18,15 +19,29 @@ body, html {
 }
 
 header {
-    background-color:rgba(172, 255, 47, 0.726);
+    background-color:rgba(7, 199, 151, 0.719);
 }
 header > h1 {
 padding: 10px;
 text-align: center;
 }
 
-menu {
+#burguer {
+    background-color: rgb(34, 34, 51);
     display: block;
+    color: aliceblue;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 30px;
+}
+#burguer:hover {
+    background-color:gray;
+    color: black;
+}
+
+menu {
+    display: none;
 }
 menu > ul {
     list-style-type: none;
@@ -35,10 +50,11 @@ menu > ul > li > a {
     display: block;
     padding: 10px;
     text-decoration: none;
-    background-color:rgba(109, 146, 74, 0.808);
+    background-color:rgba(74, 146, 143, 0.808);
     text-align: center;
     color: aliceblue;
-    border-top: 3px solid rgba(172, 255, 47, 0.719);
+    border-top: 3px solid rgba(47, 255, 175, 0.719);
+    border-radius: 30px;
 }
 menu > ul > li > a:hover {
     background-color: grey;
