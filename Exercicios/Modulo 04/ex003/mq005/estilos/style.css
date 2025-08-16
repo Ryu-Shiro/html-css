@@ -14,11 +14,11 @@
 }
 
 body, html {
-    background-color: rgba(255, 228, 196, 0.363);
+    background-color:wheat;
 }
 
 header {
-    background-color: rgba(169, 169, 169, 0.76);
+    background-color:rgba(172, 255, 47, 0.726);
 }
 header > h1 {
 padding: 10px;
@@ -35,10 +35,10 @@ menu > ul > li > a {
     display: block;
     padding: 10px;
     text-decoration: none;
-    background-color: rgba(95, 158, 160, 0.781);
+    background-color:rgba(109, 146, 74, 0.808);
     text-align: center;
     color: aliceblue;
-    border-top: 3px solid darkgrey;
+    border-top: 3px solid rgba(172, 255, 47, 0.719);
 }
 menu > ul > li > a:hover {
     background-color: grey;
